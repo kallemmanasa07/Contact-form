@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-box">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <!-- Name -->
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <div id="nameError" class="error"></div>
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter your email">
+      <div id="emailError" class="error"></div>
+
+      <!-- Message -->
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+      <div id="messageError" class="error"></div>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </form>
+    <div id="successMessage" class="success"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
